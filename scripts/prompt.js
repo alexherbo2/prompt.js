@@ -50,9 +50,11 @@ class Prompt {
     return new Promise((resolve, reject) => {
       const root = document.createElement('div')
       root.id = 'prompt'
-      // Place the prompt in a closed shadow root,
+      // Place the prompt in a shadow root,
       // so that the prompt and page styles won’t affect each other.
-      const shadow = root.attachShadow({ mode: 'closed' })
+      // Use an open shadow root to mitigate key-binding issues.
+      // For example, sites can access the real active element with document.activeElement.shadowRoot.activeElement.
+      const shadow = root.attachShadow({ mode: 'open' })
       // Dialog
       const dialog = document.createElement('dialog')
       const form = document.createElement('form')
