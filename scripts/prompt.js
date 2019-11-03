@@ -17,7 +17,7 @@ class Prompt {
         border-bottom-left-radius: 4px;
       }
       input {
-        font-family: serif;
+        font-family: sans-serif;
         font-size: 18px;
         background-color: white;
         border: none;
