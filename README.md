@@ -1,6 +1,10 @@
-# Prompt
+# prompt.js
 
-> Replacement for JavaScript’s prompt.
+prompt.js is a drop-in replacement for the JavaScript’s prompt.
+
+## Installation
+
+Add [`prompt.js`](scripts/prompt.js) to your project.
 
 ## Usage
 
@@ -10,11 +14,23 @@ const value = await prompt.fire('Ping')
 console.log(value)
 ```
 
-More examples at [Krabby].
+## Methods
 
-## References
+See the [source](scripts/prompt.js) for a complete reference.
 
-- [Create a keyboard interface to the web]
+###### `fire(message)`
 
-[Krabby]: https://krabby.netlify.com
-[Create a keyboard interface to the web]: https://alexherbo2.github.io/blog/chrome/create-a-keyboard-interface-to-the-web/
+Fires the prompt.
+Returns a [`Promise`] that resolves to the text entered by the user, or `null`.
+
+[`Promise`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+## Events
+
+###### `open()`
+
+Fired when the prompt is opened.
+
+###### `close()`
+
+Fired when the prompt is closed.
