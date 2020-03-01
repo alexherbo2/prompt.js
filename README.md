@@ -4,7 +4,7 @@ prompt.js is a drop-in replacement for the JavaScript’s prompt.
 
 ## Installation
 
-Add [`prompt.js`](scripts/prompt.js) to your project.
+Add [`prompt.js`](src/prompt.js) to your project.
 
 ## Usage
 
@@ -16,7 +16,7 @@ console.log(value)
 
 ## Methods
 
-See the [source](scripts/prompt.js) for a complete reference.
+See the [source](src/prompt.js) for a complete reference.
 
 ###### `fire(message)`
 
