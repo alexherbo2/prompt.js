@@ -1,6 +1,8 @@
 # prompt.js
 
-prompt.js is a drop-in replacement for the JavaScript’s prompt.
+prompt.js is a drop-in replacement for the JavaScript’s [`prompt()`] function.
+
+[`prompt()`]: https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt
 
 ## Installation
 
